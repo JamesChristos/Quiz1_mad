@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:text="Sok"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="Sao"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:padding="14dp"
+            android:src="@drawable/baseline_edit_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:padding="14dp"
+            android:src="@drawable/baseline_search_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover"
+            android:scaleType="centerCrop"/>
+
+        <!-- Circular profile image holder -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="-150dp"
+            android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profile"
+            android:background="@drawable/circular_background"
+            android:padding="8dp"
+            android:contentDescription="@null"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:text="Sok"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:text="Sao"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/friendCount"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="3.2k"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="friends"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Love Travelling"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#1057FA"
+            android:text="+ Add Friend"
+            android:layout_marginStart="10dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#B2B7C1"
+            android:layout_marginStart="10dp"
+            android:text="Edit Profile"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#B2B7C1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/baseline_shopping_bag_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:text="Student At"/>
+
+        <TextView
+            android:id="@+id/workPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/baseline_heart_broken_24"/>
+
+        <TextView
+            android:id="@+id/maritalStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:text="Single"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/baseline_more_horiz_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:text="See your About info"/>
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#E0E5F1"
+            android:text="Edit public details"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
